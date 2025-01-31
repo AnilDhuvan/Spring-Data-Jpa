@@ -1,0 +1,15 @@
+package com.p1.service;
+
+public interface UserService {
+	
+	public boolean userSave(String name,String email,String pwd);
+	
+	public boolean AllUserSave();
+	
+	public Void findById(int id);
+	
+	public boolean existsById(int id);
+	
+
+
+}

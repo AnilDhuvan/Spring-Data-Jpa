@@ -1,0 +1,48 @@
+package com.p1.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.p1.entity.User;
+import com.p1.repository.UserRepo;
+
+@Service
+public class UserServiceImpl implements UserService{
+
+	@Autowired
+	private UserRepo repo;
+	
+	
+	public boolean userSave(String name,String email,String pwd) {
+		
+		User user = new User(name, email, pwd);
+		
+		User save = repo.save(user);
+		
+		if(save != null) {
+			return true;
+		}else {
+			return false;
+		}	
+		
+	}
+
+	
+	public boolean AllUserSave() {
+		
+		return false;
+	}
+
+	@Override
+	public Void findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean existsById(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
