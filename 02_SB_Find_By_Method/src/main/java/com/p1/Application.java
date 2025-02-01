@@ -44,6 +44,20 @@ public class Application {
 		List<Student> byAge = bean.findByAge(21);
 		System.out.println(byAge);
 		
+		List<Student> byNameAndEmail = bean.findByNameAndEmail("anil", "anil@gmail.com");
+		System.out.println(byNameAndEmail);
+		
+		List<Student> byNameOrEmail = bean.findByNameOrEmail("dev", "anil@gmail.com");
+		System.out.println(byNameOrEmail);
+		
+		List<Student> byAgeG = bean.findByAgeGreaterThan(19);
+		System.out.println(byAgeG);
+		
+		List<Student> byAgeL = bean.findByAgeLessThan(19);
+		System.out.println(byAgeL);
+		
+		List<Student> byAgeB = bean.findByAgeBetween(10, 40);
+		System.out.println(byAgeB);
 		
 		
 	}
