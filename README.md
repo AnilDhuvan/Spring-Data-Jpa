@@ -119,9 +119,9 @@ Note: To perform DB operations we will create interface by extending from JpaRep
 
 - h2 database config 
 
-       spring.datasource.url=jdbc:h2:mem:test
-       spring.datasource.username=ashokit
-       spring.datasource.password=abc
+       spring.datasource.url=jdbc:h2:mem:nilu
+       spring.datasource.username=anil
+       spring.datasource.password=9928
 
        spring.h2.console.enabled=true
 
