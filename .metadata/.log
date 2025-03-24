@@ -625,3 +625,468 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-01 22:56:58.200
 !MESSAGE Boot project ADDED: 04_SB_One_To_One
+!SESSION 2025-03-21 22:29:22.868 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data C:\Users\anilk\Documents\workspace-spring-tool\13_Spring_Boot_DATA_JPA
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-21 22:29:25.731
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-21 22:29:27.546
+!MESSAGE Logback config file: C:\Users\anilk\Documents\workspace-spring-tool\13_Spring_Boot_DATA_JPA\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-03-21 22:29:28.259
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-21 22:29:28.259
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-03-21 22:29:28.748
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-21 22:29:28.748
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-21 22:29:34.960
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\anilk\Downloads\apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/anilk/Documents/workspace-spring-tool/13_Spring_Boot_DATA_JPA/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1742576374958
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-21 22:29:34.961
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-21 22:29:34.980
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11864
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-21 22:29:37.876
+!MESSAGE Boot project ADDED: 01_SB_Crud_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-21 22:29:37.878
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-21 22:29:37.882
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-21 22:29:37.884
+!MESSAGE Boot project ADDED: 02_SB_Find_By_Method
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-21 22:29:37.886
+!MESSAGE Boot project ADDED: 03_SB_Data_Jpa_CustomQueries
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-21 22:29:37.888
+!MESSAGE Boot project ADDED: 04_SB_One_To_One
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-03-21 22:29:37.929
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\anilk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-03-23 23:37:24.597 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-23 23:37:30.564
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-23 23:47:22.267
+!MESSAGE Logback config file: C:\Users\anilk\Documents\workspace-spring-tool\13_Spring_Boot_DATA_JPA\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-03-23 23:47:23.457
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-23 23:47:23.457
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-03-23 23:47:24.212
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-23 23:47:24.212
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-03-23 23:47:30.461
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\anilk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:47:31.020
+!MESSAGE Boot project ADDED: 01_SB_Crud_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:47:31.021
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:47:31.162
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:47:31.164
+!MESSAGE Boot project ADDED: 02_SB_Find_By_Method
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:47:31.165
+!MESSAGE Boot project ADDED: 03_SB_Data_Jpa_CustomQueries
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:47:31.170
+!MESSAGE Boot project ADDED: 04_SB_One_To_One
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-23 23:47:31.223
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\anilk\Downloads\apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/anilk/Documents/workspace-spring-tool/13_Spring_Boot_DATA_JPA/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1742753851221
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:47:31.224
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-23 23:47:31.244
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 23228
+!SESSION 2025-03-23 23:52:18.891 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-23 23:52:28.706
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-23 23:52:43.239
+!MESSAGE Logback config file: C:\Users\anilk\Documents\workspace-spring-tool\13_Spring_Boot_DATA_JPA\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-03-23 23:52:44.042
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-23 23:52:44.042
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-03-23 23:52:44.566
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-23 23:52:44.566
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-03-23 23:52:51.353
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\anilk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:52:51.838
+!MESSAGE Boot project ADDED: 01_SB_Crud_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:52:51.841
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:52:52.005
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:52:52.007
+!MESSAGE Boot project ADDED: 02_SB_Find_By_Method
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:52:52.010
+!MESSAGE Boot project ADDED: 03_SB_Data_Jpa_CustomQueries
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:52:52.040
+!MESSAGE Boot project ADDED: 04_SB_One_To_One
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-23 23:52:52.105
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\anilk\Downloads\apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/anilk/Documents/workspace-spring-tool/13_Spring_Boot_DATA_JPA/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1742754172103
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-23 23:52:52.106
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-23 23:52:52.124
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 15560
+!SESSION 2025-03-24 09:33:59.945 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-24 09:34:08.052
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-24 09:34:42.423
+!MESSAGE Logback config file: C:\Users\anilk\Documents\workspace-spring-tool\13_Spring_Boot_DATA_JPA\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-03-24 09:34:43.578
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-24 09:34:43.578
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-03-24 09:34:44.518
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-24 09:34:44.518
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-03-24 09:34:51.370
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\anilk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:34:51.833
+!MESSAGE Boot project ADDED: 01_SB_Crud_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:34:51.835
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:34:51.959
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:34:51.962
+!MESSAGE Boot project ADDED: 02_SB_Find_By_Method
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:34:51.965
+!MESSAGE Boot project ADDED: 03_SB_Data_Jpa_CustomQueries
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:34:51.968
+!MESSAGE Boot project ADDED: 04_SB_One_To_One
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-24 09:34:52.016
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\anilk\Downloads\apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\anilk\Downloads\Apps\spring-tool-suite-4-4.24.0.RELEASE-e4.32.0-win32.win32.x86_64.self-extracting\sts-4.24.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/anilk/Documents/workspace-spring-tool/13_Spring_Boot_DATA_JPA/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1742789092013
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:34:52.018
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-24 09:34:52.043
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 2768
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:36:36.115
+!MESSAGE Classpath changed for project: 04_SB_One_To_One
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 09:36:36.122
+!MESSAGE Boot project REMOVED: 04_SB_One_To_One
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:37.152
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:37.171
+!MESSAGE Boot project ADDED: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:39.229
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:41.360
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:41.725
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:45.596
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:46.475
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 10:29:55.997
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-24 11:00:33.688
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:04:47.387
+!MESSAGE Classpath changed for project: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:04:47.389
+!MESSAGE Boot project REMOVED: 03_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:04:47.389
+!MESSAGE Classpath changed for project: 04_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:04:51.152
+!MESSAGE Classpath changed for project: 04_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:04:51.166
+!MESSAGE Boot project ADDED: 04_SB_Pagination_And_Sorting
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:04:51.265
+!MESSAGE Classpath changed for project: 04_SB_Pagination_And_Sorting
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-24 11:07:07.462
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-03-24 11:07:07.923
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:05.906
+!MESSAGE Classpath changed for project: 03_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:05.907
+!MESSAGE Boot project ADDED: 03_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:07.869
+!MESSAGE Classpath changed for project: 03_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:14.712
+!MESSAGE Classpath changed for project: 03_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:14.713
+!MESSAGE Boot project REMOVED: 03_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:14.714
+!MESSAGE Classpath changed for project: 05_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:17.256
+!MESSAGE Classpath changed for project: 05_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:27:17.258
+!MESSAGE Boot project ADDED: 05_SB_ONE_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:21.624
+!MESSAGE Classpath changed for project: 05_SB_ONE_TO_ONE2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:24.170
+!MESSAGE Classpath changed for project: 05_SB_ONE_TO_ONE2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:24.173
+!MESSAGE Boot project ADDED: 05_SB_ONE_TO_ONE2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:56.908
+!MESSAGE Classpath changed for project: 05_SB_ONE_TO_ONE2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:56.909
+!MESSAGE Boot project REMOVED: 05_SB_ONE_TO_ONE2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:56.910
+!MESSAGE Classpath changed for project: 06_SB_ONE_TO_MANY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:58.759
+!MESSAGE Classpath changed for project: 06_SB_ONE_TO_MANY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:32:58.760
+!MESSAGE Boot project ADDED: 06_SB_ONE_TO_MANY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:33:25.048
+!MESSAGE Classpath changed for project: 07_SB_MANY_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:33:27.160
+!MESSAGE Classpath changed for project: 07_SB_MANY_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:33:27.162
+!MESSAGE Boot project ADDED: 07_SB_MANY_TO_ONE
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:33:44.438
+!MESSAGE Classpath changed for project: 08_SB_MANY_TO_MANY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:33:45.861
+!MESSAGE Classpath changed for project: 08_SB_MANY_TO_MANY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-24 11:33:45.862
+!MESSAGE Boot project ADDED: 08_SB_MANY_TO_MANY
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-24 11:45:35.418
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
