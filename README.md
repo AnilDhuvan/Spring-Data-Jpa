@@ -1,4 +1,5 @@
 
+
 # Spring Data JPA
 
 
@@ -51,7 +52,7 @@ Note: Spring Data JPA is the latest trend in the market to developer Persistence
 
 			Product.java  ============>  PRODUCT_TBL
 
-Note: The java class which is mapped with database table is called as Entity class.
+**Entity:-**  The java class which is mapped with database table is called as Entity class.
 
 
 			Entity class  ---------> db table
@@ -73,7 +74,7 @@ Note: The java class which is mapped with database table is called as Entity cla
 @Column	: To map java class variables with table column names  (optional)
 
 
-## Jpa Repository ?
+## Jpa Repository 
 
 
 - Data JPA provided repository interfaces to simplify Persistence layer development.
@@ -113,6 +114,18 @@ Note: To perform DB operations we will create interface by extending from JpaRep
 
 	   spring.jpa.hibernate.ddl-auto=update
        spring.jpa.show-sql=true
+
+
+
+- h2 database config 
+
+       spring.datasource.url=jdbc:h2:mem:test
+       spring.datasource.username=ashokit
+       spring.datasource.password=abc
+
+       spring.h2.console.enabled=true
+
+
 
 4) Create Entity class (class to table mapping)
 
@@ -176,6 +189,46 @@ Note: To perform DB operations we will create interface by extending from JpaRep
 
 	  //select * from employee where esalary >= :esalary
 	  public List<Employee> findByEsalaryGreaterThanEqual(Double salary);
+
+
+
+
+
+## *JpaRepository*
+
+
+=> This is predefined data jpa interface
+
+=> It is providing several methods to perform DB ops
+
+	JpaRepo = CrudRepo + Pagination + Sorting + QBE
+
+
+
+## Pagination
+
+- Divide total records into multiple pages for display.	
+
+	- decide page size (how many records shud display)
+
+	- calculage no.of pages required
+
+Scenario-1 : 
+	
+		- Total records in db tbl : 50
+		- page size : 10		
+		- total pages = total-records/page-size	 => 5 pages
+
+
+		
+## Sorting	
+
+
+- Soring the records in ascending or descending order
+
+  Ex: display mobile based on price high to low
+
+  display emps based on salary low to high	
 
 
 ## Custom Queries	
@@ -268,44 +321,6 @@ Note: To perform DB operations we will create interface by extending from JpaRep
 => Flexibility wise HQL is better
 
 
-## *JpaRepository*
-
-
-=> This is predefined data jpa interface
-
-=> It is providing several methods to perform DB ops
-
-	JpaRepo = CrudRepo + Pagination + Sorting + QBE
-
-
-
-## Pagination
-
-- Divide total records into multiple pages for display.	
-
-	- decide page size (how many records shud display)
-
-	- calculage no.of pages required
-
-Scenario-1 : 
-	
-		- Total records in db tbl : 50
-		- page size : 10		
-		- total pages = total-records/page-size	 => 5 pages
-
-
-		
-## Sorting	
-
-
-- Soring the records in ascending or descending order
-
-  Ex: display mobile based on price high to low
-
-  display emps based on salary low to high	
-
-
-
 ## QBE (Query By Example)
 
 - It is used to construct query dynamically
@@ -314,6 +329,43 @@ Scenario-1 :
 
 
 
+- To perform DML operations using custom queries we need to use below two annotations
+
+		1) @Transactional
+		
+		2) @Modifying
+
+
+
+### Transaction Management
+
+
+- When we perform DML (insert, update, delete) operations with database then tx are very very important.
+
+Note: For select operations tx is not required.	
+
+Ex: Amount transfer from one account to another account considered as single tx 
+
+	Query-1 : deduct amount from sender acc 
+	
+	Query-2 : add amount to reciever acc
+
+- If all operations are successfull then it is called as successful tx (atomocity)
+
+Note: If tx is successful then we should commit that tx.
+
+- If any one operation got failed then it is called as failure tx.
+
+Note: If tx is failed then we should rollback that tx.
+
+
+-  The @Transactional annotation is used to manage transactions in Spring.
+
+- You are working with multiple database operations inside a single method, and they must be committed or rolled back as a unit.
+
+
+### ***@Modifying*** 
+- To perform update or delete operations with a custom query, you must use @Modifying along with @Query.
 
 ## Timestamping
 
@@ -347,6 +399,25 @@ Scenario-1 :
 - Primary key is used to maintain unique records in table
 
 - For every table atleast one primary key is required.
+
+### custom Generator 
+
+
+Requiremet : Generate primary key column values like below for inserting employees into table.
+
+      Ex : 
+ 
+                AIT1
+                AIT2
+                AIT3
+
+Note: To implement above 2 requirements we can't use predefined generators.
+
+=> To generate primary key value according client given requirement we should create our own Generator class which is called as Custom Generator.
+
+=> To create our own generator we need to implement one interface i.e "IdentifierGenerator" and override generate() method.
+
+Note: Inside generate() method we should logic according to our requirement.
 
 
 ### Generator Strategies
@@ -447,6 +518,54 @@ Scenario-1 :
 
 
 
+
+##   SpringBoot Profiles	
+
+
+=> To understand profiles concept we should know about Envrionments concept.
+
+=> In realtime for every application multiple Environments will be available like below
+
+1) DEV 
+2) SIT
+3) UAT
+4) PILOT
+5) PROD (live)
+
+=> DEV env used by developers for code integration testing.
+
+=> SIT env used by testing team for system integration testing.
+
+=> UAT env used by client for user acceptance testing.
+
+=> PILOT env is used for pre-production testing.
+
+=> PROD env is used for live deployment. End users will access the application running in production.
+
+Note: Here for every environment seperate database will be available.
+
+Note: For environment config props will be different
+
+	Ex : db, smtp, kafka, redis, payment...
+
+=> If we want to deploy the code in multiple environments then evry time we need to change application.properties file which is time taking process and risk.
+
+
+=> Using SpringBoot profiles we can maintain environment specific properties in seperate files like below 
+
+
+application.properties (base file)
+application-dev.properties
+application-sit.properties
+application-uat.properties
+application-pilot.properties
+application-prod.properties
+
+=> At the time of application deployment we can activate particular profile using base properties file then boot will load the specific proile properties file.
+
+		spring.profiles.active=prod
+
+
 ## summary
 
 1) What is ORM & why
@@ -474,3 +593,6 @@ Scenario-1 :
 16) Connection Pooling
 17) Association Mapping 
 18) Conclusion
+
+
+
