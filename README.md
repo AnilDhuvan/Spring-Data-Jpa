@@ -566,6 +566,117 @@ application-prod.properties
 		spring.profiles.active=prod
 
 
+
+# Tx management
+
+
+=> Single Unit amount of work
+
+usecase : 
+
+		=> Transfer amount from one account to another account
+
+			a) debit money from sender account
+
+			b) credit money to reciever account
+
+
+=> If above two operations got completed then we will consider that as successfull transaction.
+
+Note: When tx is successfull then we have to commit that transaction.
+
+			tx.commit ( )
+
+=> If any one operation got failed then we will consider that as failure transaction.
+
+Note: When tx is failure then we have to rollback that transaction.
+
+			tx.rollback ( )
+
+-------------------------------------------------------
+    @Transactional(rollbackFor = Exception.class)
+	public void saveEmp() {
+
+		Emp e = new Emp();
+		e.setName("chary");
+		e.setSalary(3000.00);
+
+		Emp savedEmp = empRepo.save(e);
+		System.out.println(savedEmp);
+
+		int i = 10 / 0;
+
+		Address addr = new Address();
+		addr.setCity("Pune");
+		addr.setState("MH");
+		addr.setCountry("India");
+		addr.setEid(savedEmp.getEid());
+
+		addrRepo.save(addr); // saving addr
+
+	}
+
+
+
+
+### Transaction Propagation
+
+
+=> Tx Propagation defines how tx is related between calling and called methods.
+
+=> In below example, m1( ) is calling m2 ( )
+
+		m1 () => calling method
+
+		m2 () => called method
+
+
+
+	@Transactional
+	public void m1() {
+		m2();
+	}
+	
+	@Transactional
+	public void m2() {
+		
+	}
+	
+=> Below are the main propagation types:
+
+REQUIRED (default): If a transaction exists in calling method then use it for called method also. If not available then create new tx for called method.
+
+REQUIRES_NEW : Always create a new transaction. Suspends the current transaction if one exists.
+
+SUPPORTS : If a transaction exists, use it; if not, execute non-transactionally.
+
+NOT_SUPPORTED: Always executes non-transactionally, suspending any existing transaction.
+
+MANDATORY : Requires an existing transaction. Throws an exception if none exists.
+
+NEVER : Execute non-transactionally, throw an exception if a transaction exists.
+
+NESTED : Execute within a nested transaction if a current transaction exists, behave like REQUIRED otherwise.
+
+
+
+### Transaction Isolation
+
+
+=> Tx isolation defines how and when changes made by one tx visible to another tx.
+
+=> The main levels of isolation in JPA are
+
+READ_COMMITTED : Prevent dirty reads, tx can read only committed data.
+
+READ_UNCOMMITTED : Allow dirty reads, tx can read un committed changes also from other tx.
+
+REPEATABLE_READ : Ensures that if a transaction reads a row, subsequent reads will return the same data, preventing non-repeatable reads.
+
+SERIALIZABLE : The strictest isolation level, ensuring complete isolation from other transactions
+
+
+
 ## summary
 
 1) What is ORM & why
